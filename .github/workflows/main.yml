@@ -17,4 +17,5 @@ jobs:
       - name: "Terceiro step"
         run: |
           variavel = "Teste da shell em python"
+          print(variavel)
         shell: python
