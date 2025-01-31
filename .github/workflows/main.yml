@@ -14,3 +14,7 @@ jobs:
       - name: "Segundo step"
         run: |
           echo "Olá, esse é o segundo e último step desse job"
+      - name: "Terceiro step"
+        run: |
+          variavel = "Teste da shell em python"
+        shell: python
