@@ -1,0 +1,16 @@
+name: primeira pipelina
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+jobs:
+  primeiro-job:
+    name: "Primeiro job"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Primeiro step"
+        run: |
+          echo "Olá, esse é o primeiro step"
+      - name: "Segundo step"
+        run: |
+          echo "Olá, esse é o segundo e último step desse job"
